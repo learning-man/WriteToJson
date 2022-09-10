@@ -191,7 +191,7 @@ def main():
     # 解析csv文件
     # 读取数据并筛选补零，按照范围截取数据
     file_path = sys.argv[1]  # 命令行中传入的数据地址
-    data = loading_data(file_path, 'F_1_1050_4.csv')
+    data = loading_data(file_path, 'demo.csv')
     data = data.iloc[0:, 5:7]  # 只保留道路转换后的坐标
     data_array = np.array(data)  # 转换为array
 
